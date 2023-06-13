@@ -1,0 +1,388 @@
+/* ------ Général ------ */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,700&display=swap');
+*{box-sizing: border-box;}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* ------ Positionnement ------ */
+
+.menuflex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-colonnes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.colonne{
+  width:31.5%;
+}
+
+.col-2-tiers{
+  width:64.5%;
+}
+
+.col-1-tiers{
+  width:32.5%;
+  padding-top: 10px;
+}
+
+.flex-service-description{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.carte-description{
+	
+  box-shadow: 2px 5px 15px rgb(216, 216, 216);
+	padding: 15px 20px 15px 20px;
+  text-align: center;
+  background-color: #FFFBEC;
+  margin-bottom: 20px;
+}
+
+.carte-description img{
+  width:100%;
+}
+
+
+
+/* ------ Header ------ */
+
+h1{
+	background-color: #2848BB;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo span{
+  color: #FEDB4F;
+}
+
+header{
+	background-color: #002875;
+  padding: 0 20px 0 25px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+nav li{
+	display: inline-block;
+	margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: #F5F2F2;
+}
+
+nav a{
+	display: inline-block;
+	padding: 5px 20px;
+	text-decoration: none;
+  color: #ffffff;
+
+}
+
+nav a:hover{
+	background-color: #2848BB;
+  color: #ffffff;
+  padding: 15px;
+  
+}
+
+.active{
+  background-color: #FEDB4F;
+  padding:15px;
+  text-shadow:#002875 1px 0 10px;
+}
+
+
+
+/* ------ Typologie ------ */
+
+h2{
+font-size: 2rem;
+color: #FEDB4F;
+font-family: 'Oswald', sans-serif;
+
+}
+
+h3{
+  font-size: 25px;
+  color: #2848BB;
+  font-family: 'Oswald', sans-serif; }
+
+p {
+  font-family: 'roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.espace{
+  width: 50%;
+}
+
+.btn{
+  background-color:#002875;
+  text-decoration: none;
+  color :#ffffff;
+  padding : 12px 20px 12px 20px;
+}
+
+.btn:hover{
+  background-color:#2848BB;
+  color :#ffffff;
+  padding : 10px 20px 10px 20px;
+}
+
+/* ------ Page Index------ */
+
+#section-1{
+	background-size: cover;
+	background-position: top right;
+	background-image: url('../img/banniere-bg.png') ;
+  background-attachment: scroll;
+  background-position: center center;
+  min-height: 600px;
+}
+
+.titre-important{
+  font-size: 3rem;
+}
+
+.contenu-banniere{
+  color: #fff;
+	width: 50%;
+	text-align: center;
+  font-size: 2rem;
+}
+
+.flex-contenu{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 530px;
+}
+
+.flex-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contenu-banniere h2{
+  color:#ffffff;
+}
+
+video{
+  max-width: 500px;
+}
+
+.flexvideo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+  
+}
+
+/* ------ Page nos services------ */
+#section-2{
+  background-size: cover;
+  background-color:#F5F2F2;
+  padding: 25px;
+}
+
+.titre-bleu{
+  color:#2848BB;
+}
+
+/* ------ section témoignages ------ */
+.colonne-temoignage{
+  width:25%;
+}
+
+.carte-service{
+  margin-bottom: 50px;
+}
+
+.carte-service img{
+  width: 100%;
+}
+.carte-temoignage{
+text-align: center;
+}
+
+.carte img{
+  width:100%;
+}
+
+.carte{
+	
+  box-shadow: 2px 5px 15px rgb(216, 216, 216);
+	padding: 15px 20px 15px 20px;
+  text-align: center;
+  background-color: #FFFBEC;
+  margin-bottom: 50px;
+}
+
+.carte-temoignage img{
+	max-width: 60%;
+  clip-path:ellipse(50% 50%);
+  
+}
+/* ------ Page nos forfaits------ */
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 110px;
+}
+
+.tab{
+  font-size: 20px;
+  color:#2848BB;
+  font-style: italic;
+}
+
+td, th{
+	border: 1px solid ;
+	padding: 10px 20px 10px 3px;
+}
+
+th{
+	background-color: #002875;
+	color: #fff;
+  font-size:  24px;
+  line-height: 3;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.trou-du-tableau{
+  border-color: #fff;
+  background-color: #fff;
+}
+.th-forfait{
+  width: 30%;
+}
+
+td{
+  font-family: 'roboto', sans-serif;
+  text-align: left;
+}
+
+.ligne-prix{
+  font-size: 30px;
+  color:#FEDB4F;
+  border-color: black;
+  text-align: center;
+  font-weight: 700;
+}
+
+.vertical-aligne{
+  vertical-align: baseline;
+}
+.cellule-grise{
+background-color: #F5F2F2;
+}
+
+tfoot{
+  line-height: 3;
+}
+
+.btn-forfait{
+  background-color:#002875;
+  color:#fff;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto ;
+}
+
+.btn-forfait:hover{
+  background-color: #2848BB;
+}
+
+.btn-forfait a{
+  text-decoration: none;
+  color:#fff;
+}
+
+/* ------ Page nous joindre------ */
+
+.telephone{
+  text-align: center;
+  width: 50%;
+}
+.text{
+ font-style: normal;
+ font-weight: lighter;
+}
+.mail{
+  text-align:center;
+  width: 50%; 
+}
+
+.cta-nous-joindre{
+  background-color:#002875;
+  text-decoration: none;
+  color :#ffffff;
+  padding : 10px 20px 10px 20px;
+  margin : 30px 0;
+  font-weight: 300;
+}
+
+.cta-nous-joindre:hover{
+  background-color:#2848BB;
+  color :#ffffff;
+  padding : 10px 20px 10px 20px;
+}
+
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+iframe{
+  width:100%;
+  margin-bottom: 70px;
+}
+
+.section-nous-joindre{
+  margin: 50px 0;
+}
+
+
+/* ------ Footer------ */
+
+footer{
+  background-color: #002875;
+  color:#ffffff;
+ padding:30px 0;
+  font-size: 16px;
+}
+
+.flexbox-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
